@@ -10,10 +10,7 @@ gitHub       : www.github.com/Progaymanalaiwah
 
 # introduction 
 
-The Shop Management System is targeted to automate the almost all of the shop management 
-processes to reduce the clerical labor of the staff working in Stores both technical and
-as well as Accounts departments using the software Industry’s latest technologies and cost 
-effective tools there by providing the better control to the management by avoiding manual errors etc
+The Shop Management System is targeted to automate almost all of the shop management processes and reduce the clerical labor of the staff working in Stores both Technical and Accounts departments using latest technologies and cost effective tools there by providing better control to the management and avoiding manual errors etc.
 
 
 # Operating Requirements
@@ -22,8 +19,8 @@ effective tools there by providing the better control to the management by avoid
 2 - Mysql Server <br>
 3 - FTP Server <br>
 <strong>
-Mysql And FTP Server  Has Server Xampp<br>
-Downalod Server Xampp [ http://bit.ly/2l3qOSd ] <br>
+Xampp already have Mysql And FTP Server included<br>
+you can Downalod Server Xampp [ http://bit.ly/2l3qOSd ] <br>
 <strong>
 
 # Library
@@ -38,8 +35,8 @@ username : admin
 password : 12345
 --------------------------------------------------------
 1 - You Must Install Operating Requirements And Library
-2 - You must set the connection settings Mysql Server And FTP Server
+2 - You Must Set The Connection Settings for Mysql Server and FTP Server
 </pre>
 
-# Not 
-<strong>Type Email Used Of Send Coode Check RestPassword Acount Must Email Gmail example@gmail.com</strong>
+# Attention 
+<strong>Email used for ResetPassword must be a Gmail Ex: example@gmail.com</strong>
