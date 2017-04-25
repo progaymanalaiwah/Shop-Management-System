@@ -40,3 +40,6 @@ password : 12345
 1 - You Must Install Operating Requirements And Library
 2 - You must set the connection settings Mysql Server And FTP Server
 </pre>
+
+# Not 
+<strong>Type Email Used Of Send Coode Check RestPassword Acount Must Email Gmail example@gmail.com</strong>
