@@ -18,7 +18,7 @@ effective tools there by providing the better control to the management by avoid
 
 # Operating Requirements
 
-1 - Pyhton Version 2.7    [ http://bit.ly/2jYd5tk ] <br>
+1 - Pyhton Version 2.7    [ https://www.python.org/ftp/python/2.7.13/python-2.7.13.msi ] <br>
 2 - Mysql Server <br>
 3 - FTP Server <br>
 <strong>
@@ -27,10 +27,10 @@ Downalod Server Xampp [ http://bit.ly/2l3qOSd ] <br>
 <strong>
 
 # Library
-1 - PyQt4 Library       [ http://bit.ly/2q28QSV ]<br>
+1 - PyQt4 Library       [ https://netix.dl.sourceforge.net/project/pyqt/PyQt4/PyQt-4.11.4/PyQt4-4.11.4-gpl-Py2.7-Qt4.8.7-x32.exe ]<br>
 2 - MySQLdb Library     [ https://goo.gl/TrRT66 ]<br>
 3 - pdfkit Library      [ pip install pdfkit    ]<br>
-4 - wkhtmltopdf Library [ http://bit.ly/2pgUYUb ]<br>
+4 - wkhtmltopdf Library [ https://downloads.wkhtmltopdf.org/0.12/0.12.4/wkhtmltox-0.12.4_msvc2015-win32.exe ]<br>
 
 # Infromation Login
 <pre>
