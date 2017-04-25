@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>infoSettings</class>
+ <widget class="QWidget" name="infoSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>127</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>تسجيل الدخول</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../pathIcon.qrc">
+    <normaloff>:/images/login.png</normaloff>:/images/login.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <widget class="QLineEdit" name="textUsername">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>اسم االمستخدم</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="textPassowrd">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>كلمة المرور</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLogin">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>331</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>دخول</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../pathIcon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Item</class>
+ <widget class="QWidget" name="Item">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>631</width>
+    <height>271</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Droid Arabic Kufi</family>
+    <italic>false</italic>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>المنتجات</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="locale">
+   <locale language="Arabic" country="Jordan"/>
+  </property>
+  <widget class="QLineEdit" name="lineEditNameItem">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>10</y>
+     <width>301</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>اسم المنتج</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPrice">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>141</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>الثمن</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labAddImageItem">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>171</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../pathIcon.qrc">:/images/defaultItem.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditDateOfProduction">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>50</y>
+     <width>291</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>2020-12-20 :  تاريخ الانتاج</string>
+   </property>
+   <property name="cursorMoveStyle">
+    <enum>Qt::LogicalMoveStyle</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditCompletionDate">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>291</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>2017-12-20 : تاريخ الانتهاء</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comBoxCategoryItem">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>130</y>
+     <width>401</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>اختر صنف المنتج</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditQuentity">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>141</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>الكميه</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAddItem">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>190</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>اظافة</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancel">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>190</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>الغاء</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboxStoreItem">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>90</y>
+     <width>401</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>اختر مكان التخزين</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnEditItem">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>220</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>تعديل الصنف</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labItemID">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>250</y>
+     <width>62</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ItemID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labUserID">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>250</y>
+     <width>62</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UserID</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../pathIcon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

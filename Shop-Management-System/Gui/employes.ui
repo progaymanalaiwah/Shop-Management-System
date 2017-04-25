@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>employes</class>
+ <widget class="QWidget" name="employes">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>الموظفين</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../pathIcon.qrc">
+    <normaloff>:/images/employes.png</normaloff>:/images/employes.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="locale">
+   <locale language="Arabic" country="Jordan"/>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>971</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="labEmploye">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>10</y>
+      <width>191</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../pathIcon.qrc">:/images/employes.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textEmploAge">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>50</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>3</number>
+    </property>
+    <property name="placeholderText">
+     <string>عمر الموظف</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textEmploName">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>10</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+    <property name="placeholderText">
+     <string>اسم الموظف</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textEmploNumberID">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="placeholderText">
+     <string>الرقم الوطني</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textEmploNumberPhone">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>10</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="placeholderText">
+     <string>رقم الهاتف</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comBoxEmploSection">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>90</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>قسم عمل الموظف</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="textEmploSalary">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>90</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>10</number>
+    </property>
+    <property name="placeholderText">
+     <string>راتب الموظف</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="textEmploAddreass">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>50</y>
+      <width>241</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboxEmploSex">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>50</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>جنس الموظف</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ذكر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>انثى</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btnEmploAdd">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>146</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اظافة</string>
+    </property>
+    <property name="autoExclusive">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEmploNotActive">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>146</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>الغاء الموظف</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEmploEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>146</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>تعديل</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEmploActive">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>146</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>تفعيل الموظف</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancel">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>146</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>الغاء</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labUserID">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>190</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>UserID</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="textEmploSearch">
+   <property name="geometry">
+    <rect>
+     <x>578</x>
+     <y>230</y>
+     <width>401</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>اكتب ما تود البحث عنه </string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboxEmploActive">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>230</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>الموظفين النشطين</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>الموظفين الغير نشطين</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="labEmploNumber">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>230</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableEmployes">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>270</y>
+     <width>971</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>الرقم الوطني</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>الاسم</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>الراتب</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>العمر</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>القسم</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>تاريخ التوظيف</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>رقم الهاتف</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>اسم المضيف</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>230</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>عدد الموظفين : </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboxEmploReport">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>230</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>التقارير</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>كل الموظفين</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>textEmploName</tabstop>
+  <tabstop>textEmploNumberID</tabstop>
+  <tabstop>textEmploNumberPhone</tabstop>
+  <tabstop>textEmploAddreass</tabstop>
+  <tabstop>textEmploAge</tabstop>
+  <tabstop>textEmploSalary</tabstop>
+  <tabstop>comboxEmploSex</tabstop>
+  <tabstop>comBoxEmploSection</tabstop>
+  <tabstop>btnEmploAdd</tabstop>
+  <tabstop>textEmploSearch</tabstop>
+  <tabstop>comboxEmploActive</tabstop>
+  <tabstop>btnCancel</tabstop>
+  <tabstop>tableEmployes</tabstop>
+  <tabstop>btnEmploEdit</tabstop>
+  <tabstop>btnEmploActive</tabstop>
+  <tabstop>btnEmploNotActive</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../pathIcon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

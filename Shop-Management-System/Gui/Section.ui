@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Section</class>
+ <widget class="QWidget" name="Section">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>786</width>
+    <height>367</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>الاقسام</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="locale">
+   <locale language="Arabic" country="Jordan"/>
+  </property>
+  <widget class="QLineEdit" name="lineEditSectionName">
+   <property name="geometry">
+    <rect>
+     <x>388</x>
+     <y>20</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>اكتوب اسم القسم </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnAddSection">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>140</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>اظافة</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableSection">
+   <property name="geometry">
+    <rect>
+     <x>13</x>
+     <y>100</y>
+     <width>761</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="midLineWidth">
+    <number>0</number>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="autoScroll">
+    <bool>true</bool>
+   </property>
+   <property name="tabKeyNavigation">
+    <bool>true</bool>
+   </property>
+   <property name="showDropIndicator" stdset="0">
+    <bool>true</bool>
+   </property>
+   <property name="dragEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="dragDropOverwriteMode">
+    <bool>true</bool>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>false</bool>
+   </property>
+   <property name="showGrid">
+    <bool>true</bool>
+   </property>
+   <property name="sortingEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="cornerButtonEnabled">
+    <bool>true</bool>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderHighlightSections">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="verticalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string>معرف القسم</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>اسم القسم</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>تاريخ القسم</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>اسم المضيف</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="btnSectionDelete">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>60</y>
+     <width>140</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>الغاء القسم</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="linEditSectionSearch">
+   <property name="geometry">
+    <rect>
+     <x>389</x>
+     <y>60</y>
+     <width>381</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>اكتوب ما تود البحث عنه </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labUserID">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UserID</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>19</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>عدد الاقسام </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labNumberSection">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnEditSection">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>20</y>
+     <width>140</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>تعديل</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancel">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>60</y>
+     <width>140</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>الغاء</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditSectionName</tabstop>
+  <tabstop>linEditSectionSearch</tabstop>
+  <tabstop>btnAddSection</tabstop>
+  <tabstop>tableSection</tabstop>
+  <tabstop>btnSectionDelete</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

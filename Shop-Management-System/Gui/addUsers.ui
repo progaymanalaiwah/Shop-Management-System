@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Users</class>
+ <widget class="QWidget" name="Users">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>351</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>اظافة مستخدم </string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../pathIcon.qrc">
+    <normaloff>:/images/add-user.png</normaloff>:/images/add-user.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>781</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>معلومات المستخدم</string>
+   </property>
+   <widget class="QLineEdit" name="textEmail">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>109</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+    <property name="placeholderText">
+     <string>البريد الالكتروني</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textNumberID">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>29</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="placeholderText">
+     <string>الرقم الوطني</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textFullName">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>29</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+    <property name="placeholderText">
+     <string>الاسم الكامل</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textUsername">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>69</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="placeholderText">
+     <string>اسم المستخدم </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textNumberPhone">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>70</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>15</number>
+    </property>
+    <property name="placeholderText">
+     <string>رقم الهاتف</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textPassword">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>150</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+    <property name="placeholderText">
+     <string>كلمة المرور</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labAddImgUser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>211</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../pathIcon.qrc">:/images/users.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labShowPassword">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>150</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>اظهار كلمة المرور</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../pathIcon.qrc">:/images/eyePassword.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboxSex">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>110</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>جنس المستخدم</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ذكر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>انثى</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="labCreatePasswordComplix">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>150</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>انشاء كلمة مرور قوية</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../pathIcon.qrc">:/images/createPassword.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textCreatePasswordComplix">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>150</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textPasswordShow">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>150</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+    <property name="placeholderText">
+     <string>كلمة المرور</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBokPer">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>228</y>
+     <width>781</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>صلاحيات المستخدم</string>
+   </property>
+   <widget class="QCheckBox" name="checkBoxGen">
+    <property name="geometry">
+     <rect>
+      <x>682</x>
+      <y>80</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>عام</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxCalc">
+    <property name="geometry">
+     <rect>
+      <x>535</x>
+      <y>80</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ادارت المبيعات </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxChat">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>80</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>محادثه</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>102</y>
+      <width>761</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSection">
+    <property name="geometry">
+     <rect>
+      <x>682</x>
+      <y>120</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>الاقسام</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>142</y>
+      <width>761</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>652</x>
+      <y>116</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>652</x>
+      <y>78</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxItem">
+    <property name="geometry">
+     <rect>
+      <x>682</x>
+      <y>160</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>المواد</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>186</y>
+      <width>761</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>652</x>
+      <y>160</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxCust">
+    <property name="geometry">
+     <rect>
+      <x>682</x>
+      <y>204</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>العملاء</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_8">
+    <property name="geometry">
+     <rect>
+      <x>652</x>
+      <y>204</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>228</y>
+      <width>761</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxEmployee">
+    <property name="geometry">
+     <rect>
+      <x>682</x>
+      <y>244</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>الموظفين</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_10">
+    <property name="geometry">
+     <rect>
+      <x>652</x>
+      <y>242</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>761</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxUsers">
+    <property name="geometry">
+     <rect>
+      <x>662</x>
+      <y>284</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>المستخدمين</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_12">
+    <property name="geometry">
+     <rect>
+      <x>652</x>
+      <y>282</y>
+      <width>20</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>761</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSSection">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>120</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اعدادات الاقسام</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSStor">
+    <property name="geometry">
+     <rect>
+      <x>532</x>
+      <y>117</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اعدادات المخازن</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSItem">
+    <property name="geometry">
+     <rect>
+      <x>422</x>
+      <y>160</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اعدادات المنتجات</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxAddItem">
+    <property name="geometry">
+     <rect>
+      <x>542</x>
+      <y>160</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اظافة منتج </string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSCatecory">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>160</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اعدادات الاصناف</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSCust">
+    <property name="geometry">
+     <rect>
+      <x>522</x>
+      <y>200</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اعدادات العملاء</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>412</x>
+      <y>242</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>دوام الموظفين</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSEmployee">
+    <property name="geometry">
+     <rect>
+      <x>524</x>
+      <y>242</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اعدادات الموظين</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxViewUser">
+    <property name="geometry">
+     <rect>
+      <x>395</x>
+      <y>282</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>عرض المستخدمين</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxAddUser">
+    <property name="geometry">
+     <rect>
+      <x>535</x>
+      <y>282</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اظافة مستخدم</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_15">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>64</y>
+      <width>761</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxAll">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>42</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>كل الصلاحيات</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labShowMenuPer">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>8</y>
+      <width>23</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>اظهار قائمة الصلاحيات</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../pathIcon.qrc">:/images/arrow-32.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxSettings">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>80</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اعدادات البرنامج </string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxButtonControl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>781</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="btnAddUser">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اظافة مستخدم</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSelectUsers">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اختيار مستخدم </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEditUser">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>تعديل المستخدم</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancel">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>10</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>الغاء</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="labUserPassword">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>209</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UserPassword</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labImageName">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>210</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ImagesName</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labUserID">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>210</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UserID</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>textFullName</tabstop>
+  <tabstop>textNumberID</tabstop>
+  <tabstop>textUsername</tabstop>
+  <tabstop>textPassword</tabstop>
+  <tabstop>textEmail</tabstop>
+  <tabstop>textNumberPhone</tabstop>
+  <tabstop>comboxSex</tabstop>
+  <tabstop>checkBoxGen</tabstop>
+  <tabstop>textCreatePasswordComplix</tabstop>
+  <tabstop>checkBoxCalc</tabstop>
+  <tabstop>checkBoxChat</tabstop>
+  <tabstop>checkBoxSection</tabstop>
+  <tabstop>checkBoxItem</tabstop>
+  <tabstop>checkBoxCust</tabstop>
+  <tabstop>checkBoxEmployee</tabstop>
+  <tabstop>checkBoxUsers</tabstop>
+  <tabstop>checkBoxSSection</tabstop>
+  <tabstop>checkBoxSStor</tabstop>
+  <tabstop>checkBoxSItem</tabstop>
+  <tabstop>checkBoxAddItem</tabstop>
+  <tabstop>checkBoxSCatecory</tabstop>
+  <tabstop>checkBoxSCust</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>checkBoxSEmployee</tabstop>
+  <tabstop>checkBoxViewUser</tabstop>
+  <tabstop>checkBoxAddUser</tabstop>
+  <tabstop>checkBoxAll</tabstop>
+  <tabstop>btnAddUser</tabstop>
+  <tabstop>btnSelectUsers</tabstop>
+  <tabstop>btnEditUser</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../pathIcon.qrc"/>
+  <include location="../pathIcon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

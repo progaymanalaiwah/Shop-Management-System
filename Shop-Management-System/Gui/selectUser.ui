@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SelectUser</class>
+ <widget class="QWidget" name="SelectUser">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>543</width>
+    <height>359</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>اختيار مستخدم </string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="locale">
+   <locale language="Arabic" country="SaudiArabia"/>
+  </property>
+  <widget class="QLineEdit" name="textUserSearcch">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>10</y>
+     <width>531</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>البحث ....</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableSelectUser">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>50</y>
+     <width>531</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>معرف المستخدم </string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>الاسم الكامل </string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>الرقم الوطني </string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>البريد الالكتروني </string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

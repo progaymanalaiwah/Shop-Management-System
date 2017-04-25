@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>viewUsers</class>
+ <widget class="QWidget" name="viewUsers">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>970</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>عرض المستخدمين</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../pathIcon.qrc">
+    <normaloff>:/images/viewUsers.png</normaloff>:/images/viewUsers.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="locale">
+   <locale language="Arabic" country="SaudiArabia"/>
+  </property>
+  <widget class="QTableWidget" name="tableViewUsers">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>661</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>معرف المستخدم</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>الاسم الكامل </string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>البريد الالكتروني</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>رقم الهاتف</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>الرقم الوطني</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>تاريخ التسجيل</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>20</y>
+     <width>281</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="NumberUser">
+    <property name="geometry">
+     <rect>
+      <x>58</x>
+      <y>140</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnActiveUser">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>90</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>تفعيل المستخدم</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="textSearch">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>اكتب ما تود البحث عنه </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labShowImagesUser">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>187</y>
+      <width>261</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../pathIcon.qrc">:/images/users.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxActive">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>المستخدمين الفعالين</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>المستخدمين الغير فعالين</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>140</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>عدد المستخدمين :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnNotActiveUser">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>90</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>الغاء تفعيل </string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>170</y>
+      <width>251</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../pathIcon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Droid Arabic Kufi</family>
+    <pointsize>12</pointsize>
+    <italic>false</italic>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Shop Management System </string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../pathIcon.qrc">
+    <normaloff>:/images/logo.png</normaloff>:/images/logo.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="locale">
+   <locale language="Arabic" country="Jordan"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="labUserID">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>100</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>751</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu1">
+    <property name="title">
+     <string>عام</string>
+    </property>
+    <addaction name="mainSales"/>
+    <addaction name="menuChat"/>
+    <addaction name="menuSettingAll"/>
+    <addaction name="separator"/>
+    <addaction name="logOut"/>
+   </widget>
+   <widget class="QMenu" name="menu2">
+    <property name="title">
+     <string>الاقسام</string>
+    </property>
+    <addaction name="managmentSection"/>
+    <addaction name="SettingStor"/>
+   </widget>
+   <widget class="QMenu" name="menu3">
+    <property name="title">
+     <string>المواد</string>
+    </property>
+    <addaction name="addItem"/>
+    <addaction name="manegmentItem"/>
+    <addaction name="manegmentCategory"/>
+   </widget>
+   <widget class="QMenu" name="menu4">
+    <property name="title">
+     <string>العملاء</string>
+    </property>
+    <addaction name="SettingCustomers"/>
+   </widget>
+   <widget class="QMenu" name="menu5">
+    <property name="title">
+     <string>الموظفين</string>
+    </property>
+    <addaction name="SettingEmployes"/>
+   </widget>
+   <widget class="QMenu" name="menu6">
+    <property name="title">
+     <string>المستخدمين</string>
+    </property>
+    <addaction name="menuAddUser"/>
+    <addaction name="menuViewUser"/>
+   </widget>
+   <addaction name="menu1"/>
+   <addaction name="menu2"/>
+   <addaction name="menu3"/>
+   <addaction name="menu4"/>
+   <addaction name="menu5"/>
+   <addaction name="menu6"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="editProfile">
+   <property name="text">
+    <string>اعدادات الحساب</string>
+   </property>
+   <property name="iconText">
+    <string>اعدادات الحساب</string>
+   </property>
+  </action>
+  <action name="logOut">
+   <property name="icon">
+    <iconset resource="../pathIcon.qrc">
+     <normaloff>:/images/closeServer.png</normaloff>:/images/closeServer.png</iconset>
+   </property>
+   <property name="text">
+    <string>تسجيل الخروج</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="addUser">
+   <property name="text">
+    <string>اظافة مستخدم</string>
+   </property>
+  </action>
+  <action name="settingUser">
+   <property name="text">
+    <string>اعدادات المستخدمين</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>اظافة قسم</string>
+   </property>
+  </action>
+  <action name="managmentSection">
+   <property name="text">
+    <string>اعدادات الاقسام</string>
+   </property>
+  </action>
+  <action name="addItem">
+   <property name="text">
+    <string>اظافة منتج</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>اظافة عميل</string>
+   </property>
+  </action>
+  <action name="SettingCustomers">
+   <property name="icon">
+    <iconset resource="../pathIcon.qrc">
+     <normaloff>:/images/UserDefault.png</normaloff>:/images/UserDefault.png</iconset>
+   </property>
+   <property name="text">
+    <string>اعدادات العملاء</string>
+   </property>
+  </action>
+  <action name="fullScreen">
+   <property name="text">
+    <string>تصغير الشاشه</string>
+   </property>
+  </action>
+  <action name="manegmentCategory">
+   <property name="text">
+    <string>اعدادات الاصناف</string>
+   </property>
+  </action>
+  <action name="SettingStor">
+   <property name="text">
+    <string>اعدادات المخازن</string>
+   </property>
+  </action>
+  <action name="manegmentItem">
+   <property name="text">
+    <string>اعدادات المنتجات </string>
+   </property>
+  </action>
+  <action name="SettingEmployes">
+   <property name="icon">
+    <iconset resource="../pathIcon.qrc">
+     <normaloff>:/images/employes.png</normaloff>:/images/employes.png</iconset>
+   </property>
+   <property name="text">
+    <string>اعدادات الموظفين</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>دوام الموظفين</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>اعدادات الاتصال</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>العملاء</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>الموظفين</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>الاقسام</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>الموظفين </string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>المستخدمين </string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>العملاء</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>الاقسام</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="text">
+    <string>الاصناف</string>
+   </property>
+  </action>
+  <action name="action_13">
+   <property name="text">
+    <string>المنتجات </string>
+   </property>
+  </action>
+  <action name="calculator">
+   <property name="text">
+    <string>اله حاسبة</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="menuAddUser">
+   <property name="icon">
+    <iconset resource="../pathIcon.qrc">
+     <normaloff>:/images/add-user.png</normaloff>:/images/add-user.png</iconset>
+   </property>
+   <property name="text">
+    <string>اظافة مستخدم </string>
+   </property>
+  </action>
+  <action name="menuViewUser">
+   <property name="icon">
+    <iconset resource="../pathIcon.qrc">
+     <normaloff>:/images/users.png</normaloff>:/images/users.png</iconset>
+   </property>
+   <property name="text">
+    <string> عرض المستخدمين </string>
+   </property>
+  </action>
+  <action name="menuChat">
+   <property name="icon">
+    <iconset resource="../pathIcon.qrc">
+     <normaloff>:/images/chat.png</normaloff>:/images/chat.png</iconset>
+   </property>
+   <property name="text">
+    <string>محادثة</string>
+   </property>
+  </action>
+  <action name="mainSales">
+   <property name="text">
+    <string>ادارة المبيعات </string>
+   </property>
+  </action>
+  <action name="menuSettingAll">
+   <property name="icon">
+    <iconset resource="../pathIcon.qrc">
+     <normaloff>:/images/Settings.png</normaloff>:/images/Settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>اعدادات البرنامج </string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../pathIcon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

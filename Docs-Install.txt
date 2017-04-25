@@ -1,0 +1,23 @@
+Project Name : Shop-Management-System
+Version      : 1.0.0
+Language Prog: Pyhton Version 2.7.13
+Author       : Ayman Mahmoud Alaiwah
+Facebook     : www.fb.com/ProgAymanAlaiwah
+gitHub       : www.github.com/Progaymanalaiwah
+----------------------------------------------
+
+----------[ Operating Requirements ]----------
+1 - Pyhton Version 2.7  [ http://bit.ly/2jYd5tk ] 
+2 - Mysql Server 
+3 - FTP Server 
+[2-3] Xampp Server      [ http://bit.ly/2l3qOSd ] 
+PathFTP = /Home/
+
+----------[ Library ]----------
+2 - PyQt4 Library       [ http://bit.ly/2q28QSV ]
+3 - MySQLdb Library     [ https://goo.gl/TrRT66 ]
+4 - pdfkit Library      [ pip install pdfkit    ]
+5 - wkhtmltopdf Library [ http://bit.ly/2pgUYUb ]
+-----------------------------------
+username : admin
+password : 12345

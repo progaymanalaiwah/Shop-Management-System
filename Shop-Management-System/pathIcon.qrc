@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+        <file>images/defaultItem.png</file>
+        <file>images/login.png</file>
+        <file>images/UserDefault.png</file>
+        <file>images/employes.png</file>
+        <file>images/eyePassword.png</file>
+        <file>images/users.png</file>
+        <file>images/arrow.png</file>
+        <file>images/arrow-32.png</file>
+        <file>images/createPassword.png</file>
+        <file>images/add-user.png</file>
+        <file>images/viewUsers.png</file>
+        <file>images/SalesAdministration.png</file>
+        <file>images/addSales.png</file>
+        <file>images/calculator.png</file>
+        <file>images/printer.png</file>
+        <file>images/save.png</file>
+        <file>images/resetPassword.png</file>
+        <file>images/Settings.png</file>
+        <file>images/database.png</file>
+        <file>images/ftp.png</file>
+        <file>images/chat.png</file>
+        <file>images/connect.png</file>
+        <file>images/runServer.png</file>
+        <file>images/closeServer.png</file>
+        <file>images/logo.png</file>
+    </qresource>
+</RCC>

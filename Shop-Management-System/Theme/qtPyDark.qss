@@ -1,0 +1,408 @@
+/*
+ background:#272b38
+*/
+/* Start Genral Rule*/
+
+*{font-family:"Droid Arabic Kufi";}
+QWidget{ /* Style Widget */
+    background-color:#272b38;
+    font-size:13px;
+    color:#FFF;
+}
+QLabel#labLoginUser{
+background-color:#2d3140;
+}
+QPushButton{ /* Style Button */
+    color:#FFF;
+    background:#3498db;
+    border-radius:3px;
+    border-bottom:4px solid #2980b9;
+}
+QPushButton:hover{
+    background:#2980b9;
+    border-radius:3px;
+    border:1px solid #2980b9;
+
+}
+QGroupBox{
+    border:2px solid #444;
+    border-radius:2px;
+
+}
+QMessageBox QPushButton{
+    width:75px;
+}
+QLineEdit, /* Style QLineEdit And QPlainTextEdit */
+QPlainTextEdit{
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    color: #444;
+    font-size: 12px;
+    font-weight:bold;
+    padding:1px 5px ;
+}
+QComboBox{ /* Style ComboBox */
+    color: #2d3140;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+QComboBox::drop-down {
+    background: transparent;
+    border: 0;
+}
+QComboBox::drop-down:on {
+    background-color: #FFFFFF;
+}
+QComboBox::down-arrow{
+    image: url("images/arrow.png");
+}
+QComboBox::down-arrow:on {
+
+}
+QComboBox::down-arrow,
+QComboBox::down-arrow:on{
+    padding: 0px 5px 0px 5px;
+    margin-left: 7px;
+}
+QComboBox QAbstractItemView {
+    selection-background-color: #528CCB;
+    background-color:#2d3140;
+    border: 1px solid #444;
+    border-top: 0;
+    color: #EDEDED;
+}
+/* End Globle Rule */
+/**[Start  Table ]**/
+QTableWidget{
+    background-color:#2d3140;
+    color: #EDEDED;
+    border: 1px solid #453E4A;
+    border-top:0;
+    text-align: center;
+}
+QHeaderView{
+    font-weight:bold;
+    font-size:12px;
+    border: 1px solid #453E4A;
+}
+QHeaderView::section
+{
+    background-color:#2d3140;
+    border: 1px solid #453E4A;
+    padding: 5px;
+}
+QScrollBar{
+    width: 8px;
+    background:#272b38
+}
+QScrollBar::handle:vertical{
+    border-radius: 4px;
+    background:#3498db;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical{
+    width:0px;
+}
+/**[End  Table ]**/
+/* End Genral Rule */
+
+/* Start Window Login */
+QLabel#labReturnPass{
+    color:#AAAAAA;
+}
+QLabel#labReturnPass:hover{
+    color:#AAAAAA;
+}
+QLineEdit#linEditUser,
+QLineEdit#lineEditPassword
+{
+    border:none;
+    background:transparent;
+    border-bottom:1px solid #07ABA0;
+    padding:5px;
+    color:#EEE;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+QPushButton#btnClose{
+    border: none;
+    background-color: #D73C2C;
+    border-bottom: 4px solid #E74C3C;
+    color: #AAAAAA;
+    font-weight: bold;
+}
+QPushButton#btnClose:hover{
+    background-color: #E74C3C;
+    border-bottom: 1px solid #D73C2C;
+}
+QPushButton#btnLogin{
+    border: none;
+    background-color:#0077C0;
+    border-bottom: 4px solid #0287D0;
+    color: #AAAAAA;
+    font-weight: bold;
+
+}
+QPushButton#btnLogin:hover{
+    background-color: #0287D0;
+    border-bottom: 1px solid #0077C0;
+}
+/* End Window Login */
+
+
+/* Start Main Menu*/
+
+QMenuBar {
+    font-size:13px;
+}
+QMenuBar::item,
+QMenuBar {
+      background-color:#282830;
+}
+QMenuBar::item {
+    color:#FFF;
+    padding: 4px;
+}
+QMenuBar::item:selected {
+    background: #2980b9;
+    color:#FFF;
+}
+QMenu {
+    background-color:#2d3140;
+    color:#FFF;
+    font-size:11px;
+    text-align: center;
+    border-bottom: 2px solid #282830;
+    border-top: 2px solid #3498db;
+
+}
+QMenu::item{
+    padding:6px;
+    width:140px;
+    text-align: right;
+}
+QMenu::item:selected {
+    background-color: #2980b9;
+}
+/* End Main Menu*/
+
+/* [ Start Window Section ] */
+QPushButton#btnEditSection{
+    background-color: #16a085;
+    border-bottom: 4px solid #1abc9c;
+}
+QPushButton#btnEditSection:hover{
+    background-color: #16a085;
+    border: none;
+    border-bottom: 1px soldi #16a085;
+    border-radius:3px;
+}
+QPushButton#btnSectionDelete{
+    background-color: #e74c3c;
+    border-bottom:4px solid #c0392b;
+    border-radius:3px;
+}
+QPushButton#btnSectionDelete:hover{
+    border:1px solid #e74c3c;
+}
+QPushButton#btnCancel{
+    background-color: #5bc0de;
+    border-bottom:4px solid #50a3bb;
+    border-radius:3px;
+}
+QPushButton#btnCancel:hover{
+    border:1px solid #5bc0de;
+}
+QLabel#labNumberSection{
+    color: #1abc9c;
+    font-weight:bold;
+}
+
+/* [ End Window Section ] */
+
+/* [ Start Window Category ] */
+QPushButton#btnEditCategory{
+    background-color: #00B5B5;
+    border-bottom: 4px solid #06cccc;
+}
+QPushButton#btnEditCategory:hover{
+    background-color: #06cccc;
+    border: none;
+    border-bottom: 1px soldi #00B5B5;
+    border-radius:3px;
+}
+QPushButton#btnCategoryDelete{
+    background-color: #e74c3c;
+    border-bottom:4px solid #c0392b;
+    border-radius:3px;
+}
+QPushButton#btnCategoryDelete:hover{
+    border:1px solid #e74c3c;
+}
+/* [ End Window Category ] */
+
+/* [ Start Window Store ] */
+QPushButton#btnStoreEdit{
+    background-color: #00B5B5;
+    border-bottom: 4px solid #06cccc;
+}
+QPushButton#btnStoreEdit:hover{
+    background-color: #06cccc;
+    border: none;
+    border-bottom: 1px soldi #00B5B5;
+    border-radius:3px;
+}
+QPushButton#btnStoreDelete{
+    background-color: #e74c3c;
+    border-bottom:4px solid #c0392b;
+    border-radius:3px;
+}
+QPushButton#btnStoreDelete:hover{
+    border:1px solid #e74c3c;
+}
+/* [ End Window Store ] */
+
+
+/* [ Start Window SettingItem ] */
+QPushButton#btnActive{
+    background-color: #16a085;
+    border-bottom: 4px solid #1abc9c;
+}
+QPushButton#btnActive:hover{
+    background-color: #16a085;
+    border: none;
+    border-bottom: 1px soldi #16a085;
+    border-radius:3px;
+}
+QPushButton#btnNotActive{
+    background-color: #e74c3c;
+    border-bottom:4px solid #c0392b;
+    border-radius:3px;
+}
+QPushButton#btnNotActive:hover{
+    border:1px solid #e74c3c;
+}
+/* [ End Window SettingItem ] */
+
+/* [ Start Window Customer ] */
+QPushButton#btnCustomerActive{
+    background-color: #16a085;
+    border-bottom: 4px solid #1abc9c;
+}
+QPushButton#btnCustomerActive:hover{
+    background-color: #16a085;
+    border: none;
+    border-bottom: 1px soldi #16a085;
+    border-radius:3px;
+}
+QPushButton#btnCustomerNotActivet{
+    background-color: #e74c3c;
+    border-bottom:4px solid #c0392b;
+    border-radius:3px;
+}
+QPushButton#btnCustomerNotActivet:hover{
+    border:1px solid #e74c3c;
+}
+QPushButton#btnCustomerEdit{
+    background-color: #00B5B5;
+    border-bottom: 4px solid #06cccc;
+}
+QPushButton#btnCustomerEdit:hover{
+    background-color: #06cccc;
+    border: none;
+    border-bottom: 1px soldi #00B5B5;
+    border-radius:3px;
+}
+/* [ End Window Customer ] */
+
+/* [ Start Window employes ] */
+QPushButton#btnEmploActive{
+    background-color: #16a085;
+    border-bottom: 4px solid #1abc9c;
+}
+QPushButton#btnEmploActive:hover{
+    background-color: #16a085;
+    border: none;
+    border-bottom: 1px soldi #16a085;
+    border-radius:3px;
+}
+QPushButton#btnEmploNotActive{
+    background-color: #e74c3c;
+    border-bottom:4px solid #c0392b;
+    border-radius:3px;
+}
+QPushButton#btnEmploNotActive:hover{
+    border:1px solid #e74c3c;
+}
+QPushButton#btnEmploEdit{
+    background-color: #00B5B5;
+    border-bottom: 4px solid #06cccc;
+}
+QPushButton#btnEmploEdit:hover{
+    background-color: #06cccc;
+    border: none;
+    border-bottom: 1px soldi #00B5B5;
+    border-radius:3px;
+}
+QLabel#labEmploNumber{
+   font-weight:bold;
+   color: #1abc9c;
+
+}
+/* [ End Window employes ] */
+
+
+/* [ Start Add Users ] */
+QPushButton#btnSelectUsers{
+    background-color: #00B5B5;
+    border-bottom: 4px solid #06cccc;
+}
+QPushButton#btnSelectUsers:hover{
+    background-color: #06cccc;
+    border: none;
+    border-bottom: 1px soldi #00B5B5;
+    border-radius:3px;
+}
+#textCreatePasswordComplix{
+    color:#1abc9c;
+    background:transparent;
+
+}
+
+QPushButton#btnActiveUser{
+    background-color: #16a085;
+    border-bottom: 4px solid #1abc9c;
+}
+QPushButton#btnActiveUser:hover{
+    background-color: #16a085;
+    border: none;
+    border-bottom: 1px soldi #16a085;
+    border-radius:3px;
+}
+QPushButton#btnNotActiveUser{
+    background-color: #e74c3c;
+    border-bottom:4px solid #c0392b;
+    border-radius:3px;
+}
+QPushButton#btnNotActiveUser:hover{
+    border:1px solid #e74c3c;
+}
+QLabel#NumberUser{
+   font-weight:bold;
+   color: #1abc9c;
+}
+
+/* [ End Add Users ] */
+QPushButton:!enabled
+{
+     background-color: #CCC;
+     border-bottom:4px solid #CCC;
+     color:#777;
+}
+QLineEdit:!enabled
+{
+     background-color: #CCC;
+}

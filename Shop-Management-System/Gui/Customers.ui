@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Customers</class>
+ <widget class="QWidget" name="Customers">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>العملاء</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../pathIcon.qrc">
+    <normaloff>:/images/UserDefault.png</normaloff>:/images/UserDefault.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="locale">
+   <locale language="Arabic" country="Jordan"/>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>5</y>
+     <width>811</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLineEdit" name="lineEditCustomerName">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>14</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>49</number>
+    </property>
+    <property name="placeholderText">
+     <string>اسم المستخدم</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditCustomerPhone">
+    <property name="geometry">
+     <rect>
+      <x>214</x>
+      <y>64</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="placeholderText">
+     <string>رقم العميل</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditCustomerEmail">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>14</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>49</number>
+    </property>
+    <property name="placeholderText">
+     <string>اميل العميل</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxSex">
+    <property name="geometry">
+     <rect>
+      <x>215</x>
+      <y>115</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>جنس العميل</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ذكر</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>انثى</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="labCustomerImage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>191</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../pathIcon.qrc">:/images/UserDefault.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCustomerAdd">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>اظافة</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCustomerNotActivet">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>الغاء العميل</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEditCustomerAddress">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>54</y>
+      <width>281</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="maximumBlockCount">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCustomerActive">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>تفعيل العميل</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCustomerEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>تعديل العميل</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCancel">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>الغاء</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditCustomerSearch">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>230</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>50</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>اكتوب ما تود البحث عنه</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBoxSelectActive">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>230</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>العملاء الفعالين</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>العملاء الغير فعالين</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="labUserID">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>UserID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labCustID">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>90</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>UserCust</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableWidget" name="tableCustomer">
+   <property name="geometry">
+    <rect>
+     <x>6</x>
+     <y>290</y>
+     <width>811</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <column>
+    <property name="text">
+     <string>معرف العميل</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>اسم العميل</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>اميل العميل</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>رقم العميل</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>تاريخ الاظافة</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>اسم المظيف</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>جنس العميل</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>عنوان العميل</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditCustomerName</tabstop>
+  <tabstop>lineEditCustomerEmail</tabstop>
+  <tabstop>plainTextEditCustomerAddress</tabstop>
+  <tabstop>lineEditCustomerPhone</tabstop>
+  <tabstop>comboBoxSex</tabstop>
+  <tabstop>btnCustomerAdd</tabstop>
+  <tabstop>btnCustomerNotActivet</tabstop>
+  <tabstop>tableCustomer</tabstop>
+  <tabstop>btnCustomerActive</tabstop>
+  <tabstop>btnCustomerEdit</tabstop>
+  <tabstop>btnCancel</tabstop>
+  <tabstop>lineEditCustomerSearch</tabstop>
+  <tabstop>comboBoxSelectActive</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../pathIcon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
