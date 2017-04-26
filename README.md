@@ -41,5 +41,5 @@ password : 12345
 2 - You must set the connection settings Mysql Server And FTP Server
 </pre>
 
-# Not 
+# Note
 <strong>Type Email Used Of Send Coode Check RestPassword Acount Must Email Gmail example@gmail.com</strong>
